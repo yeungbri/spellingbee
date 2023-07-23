@@ -1,5 +1,7 @@
 # Spelling Bee Trainer
 
+![Alt text](image.png)
+
 ## Installation
 
 Works on python 3.7.2

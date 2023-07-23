@@ -39,7 +39,7 @@ def init():
             for line in file:
                 if line.rstrip('\n').isalpha():
                     word_list.append(line.strip())
-    print(word_list[:100])
+    # print(word_list[:100])
 
     word_to_error = {word: 1 for word in word_list}
     return word_to_error
@@ -90,7 +90,6 @@ def cli():
     weights = [val/cumsum for val in words_to_errors.values()]
     # print(cumsum, weights[:100])
 
-    print(words[:100])
     ordered = np.random.choice(words, p=weights, replace=False, size=len(words))
 
     # TODO: don't need to copy it can just update original map
